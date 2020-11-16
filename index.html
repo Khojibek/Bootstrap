@@ -86,12 +86,84 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" alt="Logo" class="img-fluid">
                 </div>
-                <a class="col-12 col-sm align-self-center btn btn-warning" href="#reserve" data-toggle="tooltip" data-html="true" title="Or call us at +998911772868" data-placement="bottom">
+                <a  data-toggle="modal" data-target="#reserveModal" class="col-12 col-sm align-self-center btn btn-warning" href="#reserveModal" >
                     Reserve Table
                 </a>
             </div>
         </div>
     </header>
+
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <p class="col-md-3 col-form-label">Number of Guests</p>
+                            <div class="col-md-9">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="number" id="one" value="one">
+                                    <label class="form-check-label" for="one">1</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="number" id="two" value="two">
+                                    <label class="form-check-label" for="two">2</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="number" id="3" value="3" checked>
+                                    <label class="form-check-label" for="3">3</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="number" id="4" value="4">
+                                    <label class="form-check-label" for="4">4</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="number" id="5" value="">
+                                    <label class="form-check-label" for="5">5</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="number" id="6" value="6">
+                                    <label class="form-check-label" for="6">6</label>
+                                  </div>      
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <p class="col-md-3 col-form-label">Section</p>
+                            <div class="col-md-9">
+                                <a href="#" class="btn btn-success btn-lg active" role="button">Non-Smoking</a>
+                                <a href="#" class="btn btn-danger btn-lg" role="button">Smoking</a>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <p class="col-md-3 col-form-label">Date and Time</p>
+                            <div class="col-md-9 form-row">
+                                <div class="col-sm-12 col-md-6">
+                                    <input type="date" class="form-control" name="dateTime" id="dateTime" placeholder="Date">
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <input type="time" class="form-control" name="dateTime" id="dateTime" placeholder="Time">
+                                </div>
+                                <div class="ml-2">
+                                    <br>
+                                    <button type="button" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Reserve</button>
+
+                                </div>
+                                
+                            </div>
+               
+                        </div>
+                    </form>  
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row row-content">
@@ -135,101 +207,11 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>Our Lipsmacking Culinary Creations</h3>
-            </div>
-            <div class="col col-sm order-sm-first col-md">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza image">
-                    <div class="media-body">
-                    </div>
-                </div>
-                
-            </div>
-        </div>
 
-
-        <div class="media row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
-                <h3>This Month's Promotions</h3>
-            </div>
-            <div class=" media-body col col-sm col-md">
-                               
-            </div>
-            <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza image">
-        </div>
-
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">   
-                <h3>Meet our Culinary Specialists</h3>
-            </div>
-            <div class="col col-sm order-sm-first col-md">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="Alberto">
-                    <div class="media-body">
-                        
-                     </div>
-                </div>
-            </div>
-        </div> -->
+           
         
-        <div class="card align-items-center" id="reserve">
-            <h3 class="col-6 card-header text-white bg-warning">Reserve a table</h3> 
-                <div class="card-body"> 
-                    <form>
-                        <div class="form-group row">
-                            <p class="col-md-3 col-form-label">Number of Guests</p>
-                            <div class="col-md-9">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="number" id="one" value="one">
-                                    <label class="form-check-label" for="one">1</label>
-                                  </div>
-                                  <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="number" id="two" value="two">
-                                    <label class="form-check-label" for="two">2</label>
-                                  </div>
-                                  <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="number" id="3" value="3">
-                                    <label class="form-check-label" for="3">3</label>
-                                  </div>
-                                  <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="number" id="4" value="4">
-                                    <label class="form-check-label" for="4">4</label>
-                                  </div>
-                                  <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="number" id="5" value="">
-                                    <label class="form-check-label" for="5">5</label>
-                                  </div>
-                                  <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="number" id="6" value="6">
-                                    <label class="form-check-label" for="6">6</label>
-                                  </div>      
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <p class="col-md-3 col-form-label">Date and Time</p>
-                            <div class="col-md-9 form-row">
-                                <div class="col-sm-12 col-md-6">
-                                    <input type="date" class="form-control" name="dateTime" id="dateTime" placeholder="Date">
-                                </div>
-                                <div class="col-sm-12 col-md-6">
-                                    <input type="time" class="form-control" name="dateTime" id="dateTime" placeholder="Time">
-                                </div>
-                                <div class="ml-2">
-                                    <br>
-                                    <button type="submit" class="btn btn-primary">Reserve</button>
-                                </div>
-                                
-                            </div>
-                            
-                            
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+        
+       
 
     <footer class="footer">
         <div class="container">
@@ -280,11 +262,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toogle="tooltip"]').tooltip() ;
-        })
-    </script>
+  
 </body>
 
 </html>
